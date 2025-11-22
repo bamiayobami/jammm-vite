@@ -1,0 +1,59 @@
+form {
+    width: 75%;
+    margin: auto;
+    padding: 1rem;
+}
+
+input[type=text], input[type=submit] {
+    background-color: lightblue;
+    border: 2px solid blue;
+    border-radius: 4px;
+    height: 5vh;
+}
+
+input[type=text] {
+    width: 50%;
+}
+
+input[type=text]::placeholder {
+    color: #020917;
+    opacity: 0.5;
+}
+
+input[type=text]:focus {
+  /* width: 75%; */
+  background-color: blue;
+  color: #fff;
+}
+
+input[type=submit] /*, input[type=submit]:active */ {
+    width: 100px;
+    background-color: blue;
+    color:beige;
+    font-size: 14px;
+    transition: width 3s ease-in-out;
+}
+input[type=submit]:hover {
+    width: 102px;
+    font-size: 16px;
+    border: thin dashed beige;
+    cursor: pointer;
+    /* border-color: beige; */
+}
+input[type=submit]:active {
+    border: thick;
+    width: 100px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+label.radioText {
+    opacity: 0.5;
+}
+label.radioText:hover {
+    cursor: pointer;
+}
+input[type=radio]:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+} 

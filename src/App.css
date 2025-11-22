@@ -1,42 +1,114 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: #fff;
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  background-image: linear-gradient(to bottom, #020917, #101725);
+}
+/*
+  background-image: linear-gradient(to bottom, hsla(120,100%,25%,0.3), hsla(120,100%,75%,0.3));
+  background-image: linear-gradient(to bottom, #020917, #101725);
+*/
+header {
+  margin-bottom: 2rem;
+}
+
+form, .results-playlists > div {
+  border: thin dashed lightblue;
+  border-radius: 1rem;
+  margin: .25rem;
+}
+
+.content {
+  display: flex;
+  min-height: 60vh;
+  line-height: 1.1;
   text-align: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.content h1 {
+  font-size: 3.6rem;
+  font-weight: 700;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.content p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  opacity: 0.5;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.results-playlists {
+  display: grid;
+  grid-template-columns: 50% 50%;
 }
 
-.card {
-  padding: 2em;
+ul {
+  list-style-type: none;
 }
 
-.read-the-docs {
-  color: #888;
+li {
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    width: 95%;
+    margin-left: 0;
+    padding: 0;
+}
+
+hr {
+  border: thin dashed blue;
+  opacity: 0.5;
+}
+
+input#playlist-name {
+  width: 60%;
+  height: 2rem;
+  border-style: none none dashed none;
+  border-width: thin;
+  border-color: blue;
+  background-color: transparent;
+  color: beige;
+  font-size: 16px;
+  padding-left: 8px;
+  margin-bottom: 1rem;
+  margin: auto auto;
+  display: block;
+}
+input#playlist-name::placeholder {
+  color: lightgray;
+}
+
+.right {
+  float: right;
+}
+
+button, button:active {
+  display: block;
+  background-color: darkblue;
+  color:beige;
+  width: 20vw;
+  height: 3rem;
+  margin: auto;
+  border-radius: 8px;
+  font-size: 14px;
+}
+button:hover {
+  color: white;
+  border: thin dashed lightblue;
+  font-size: 16px;
+  cursor: pointer;
+}
+button:active {
+  font-size: 14px;
+  width: 19.5vw;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  margin-top: 2rem;
 }

@@ -1,0 +1,10 @@
+.right {
+  float: right;
+}
+
+.right:hover {
+  color: blue;
+  cursor: pointer;
+  transform: scale(1.2);
+    /* transition: transform 2s ease 1s; */
+}
