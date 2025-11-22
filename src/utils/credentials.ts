@@ -1,5 +1,7 @@
 
 const clientID = 'f76562d6d4f94f3e80a4d03ec78b8c90';
+// for production deployment
+const redirectURI = 'https://jammm-vite.vercel.app/';
 
 // rsBuild localhost server 
 // const  redirectURI = 'http://localhost:3000'
@@ -7,7 +9,7 @@ const clientID = 'f76562d6d4f94f3e80a4d03ec78b8c90';
 
 // loopback server IPv6
 // const redirectURI = 'http://127.0.0.1:3000';
-const redirectURI = 'http://127.0.0.1:5173';
+// const redirectURI = 'http://127.0.0.1:5173';
 
 // vite dev server
 // const  redirectURI = 'http://localhost:5173';
