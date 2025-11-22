@@ -14,6 +14,13 @@ const redirectURI = 'http://127.0.0.1:5173';
 // const  redirectURI = 'http://192.168.43.67:5173';
 
 
-const scope = 'playlist-modify-public user-read-private user-read-email';
+const scope = 'playlist-modify-private playlist-modify-public user-read-private user-read-email';
 
 export { clientID, redirectURI, scope };
+
+export type TrackData = {
+            id: number,
+            title: string,
+            artist: string,
+            album: string
+        }[];

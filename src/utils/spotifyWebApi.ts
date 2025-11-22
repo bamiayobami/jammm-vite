@@ -1,9 +1,9 @@
-import data from './mockData';
+import tracks from './mockData.ts';
 
-const base_url = 'https://api.spotify.com';
+// const base_url = 'https://api.spotify.com';
 
-const search_endpoint = '/v1/search?type=TRACK';
-'&limit=20&query=';
+// const search_endpoint = '/v1/search?type=TRACK';
+// '&limit=20&query=';
 
 const getData = async (accessToken: string, searchInput: string, filter: string) => {
     try {
@@ -13,7 +13,7 @@ const getData = async (accessToken: string, searchInput: string, filter: string)
             console.log(`Fetching data with access token: ${accessToken}, searchInput: ${searchInput}, filter: ${filter}`);
         }
     
-        return new Promise<any[]>((resolve) => setTimeout(() => resolve(data), 1000));
+        return new Promise<any[]>((resolve) => setTimeout(() => resolve(tracks), 1000));
 
     } catch (error) {
         console.error('Error fetching data from Spotify API:', error);
